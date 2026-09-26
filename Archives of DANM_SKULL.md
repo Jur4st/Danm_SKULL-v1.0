@@ -9,9 +9,19 @@ pkg install bash curl nmap -y
 Execute:
 nano danm_skull.sh
 
-3{Cole o código: q esta
+3{Copie e colo o código q esta no "CODE"
+Salva o arquivo
+No editor Nano:
+Aperte CTRL + O para salvar.
+Aperte Enter para confirmar.
+Aperte CTRL + X para sair.
+
+4{Dar permissão e executar:
 chmod +x danm_skull.sh
 ./danm_skull.sh
 
+5{Quando for abrir o programa excute:
 cd ~
 ./danm_skull.sh
+
+⚠️ Use com responsabilidade e não teremos responsabilidade com oq fazer.
