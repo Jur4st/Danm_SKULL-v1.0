@@ -9,7 +9,7 @@ pkg install bash curl nmap -y
 Execute:
 nano danm_skull.sh
 
-3{Copie e colo o código q esta no "CODE"
+3{Copie e colo o código q esta no "📍CODE"
 Salva o arquivo
 No editor Nano:
 Aperte CTRL + O para salvar.
