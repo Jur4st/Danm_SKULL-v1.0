@@ -1,5 +1,5 @@
 # Danm_SKULL-v1.0
-(New program For Termux)
+(New program For TERMUX)
 
 1{No Termux cole:
 pkg update && pkg upgrade -y
