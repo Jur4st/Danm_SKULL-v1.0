@@ -1,0 +1,31 @@
+#!/bin/bash
+clear
+echo "================================================"
+echo "          💀 DANM SKULL v1.0 💀                "
+echo "================================================"
+echo "1. Port Scanning (Nmap)"
+echo "2. Extract Target IP and Information (Curl)"
+echo "3. Check My Public IP"
+echo "4. Exit"
+echo "================================================"
+read -p "Choose an option: " opt
+
+case $opt in
+  1)
+    read -p "Enter target IP or domain: " target
+    nmap -sV "$target"
+    ;;
+  2)
+    read -p "Enter URL (e.g., google.com): " url
+    curl -I "http://$url"
+    ;;
+  3)
+    curl ifconfig.me
+    ;;
+  4)
+    exit
+    ;;
+  *)
+    echo "Invalid option!"
+    ;;
+esac
