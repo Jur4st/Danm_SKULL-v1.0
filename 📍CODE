@@ -1,0 +1,32 @@
+#!/bin/bash
+ 2 clear
+ 3 echo "================================================"
+ 4 echo "          💀 DANM SKULL v1.0 💀                "
+ 5 echo "================================================"
+ 6 echo "1. Scan de Portas (Nmap)"
+ 7 echo "2. Extrair IP e Info do Alvo (Curl)"
+ 8 echo "3. Ver meu IP Público"
+ 9 echo "4. Sair"
+10 echo "================================================"
+11 read -p "Escolha uma opção: " opt
+12
+13 case $opt in
+14   1)
+15     read -p "Digite o IP ou domínio do alvo: " target
+16     nmap -sV $target
+17     ;;
+18   2)
+19     read -p "Digite a URL (ex: google.com): " url
+20     curl -I http://$url
+21     ;;
+22   3)
+23     curl ifconfig.me
+24     ;;
+25   4)
+26     exit
+27     ;;
+28   *)
+29     echo "Opção inválida!"
+30     ;;
+31 esac
+32
